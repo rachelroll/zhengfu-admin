@@ -63,8 +63,8 @@ class Movie extends Resource
             Text::make('语言', 'language'),
             Date::make('上映日期', 'date'),
             Textarea::make('电影简介', 'description'),
-            Image::make('封面图', 'cover')->disk('public')->hideFromIndex(),
-            Text::make('资源路径', 'path'),
+            //Image::make('封面图', 'cover')->disk('public')->hideFromIndex(),
+            //Text::make('资源路径', 'path'),
             Text::make('备注', 'remark')->nullValues(['']),
             BelongsTo::make('类型', 'category', 'App\Nova\Category')->sortable(),
         ];
