@@ -24,11 +24,7 @@
         "laravel/tinker": "^1.0",
         "nibri10/nova-grid": "^1.0",
         "sixlive/nova-text-copy-field": "^1.5",
-        "spatie/nova-tail-tool": "^2.1",
-        "ross/custom-resource-toolbar": "*",
-        "acme/stripe-inspector": "*",
-        "beyondcode/viewcache": "*",
-        "0x15f/custom-resource-toolbar": "*"
+        "spatie/nova-tail-tool": "^2.1"
     },
     "require-dev": {
         "facade/ignition": "^1.4",

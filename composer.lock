@@ -4,74 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9eb427477643a1216c49a67a1707fbd8",
+    "content-hash": "ef9c52be4be2257c753bcf101661379a",
     "packages": [
-        {
-            "name": "0x15f/custom-resource-toolbar",
-            "version": "dev-master",
-            "dist": {
-                "type": "path",
-                "url": "./nova-components/CustomResourceToolbar",
-                "reference": "7140979253d183707974104bb66d7857c256cdff"
-            },
-            "require": {
-                "php": ">=7.1.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "0x15f\\CustomResourceToolbar\\ToolServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "0x15f\\CustomResourceToolbar\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "description": "A Laravel Nova resource tool.",
-            "keywords": [
-                "laravel",
-                "nova"
-            ]
-        },
-        {
-            "name": "acme/stripe-inspector",
-            "version": "dev-master",
-            "dist": {
-                "type": "path",
-                "url": "./nova-components/StripeInspector",
-                "reference": "2c468ce641f7d067efffc525d6cefea336b083ec"
-            },
-            "require": {
-                "php": ">=7.1.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Acme\\StripeInspector\\ToolServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Acme\\StripeInspector\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "description": "A Laravel Nova resource tool.",
-            "keywords": [
-                "laravel",
-                "nova"
-            ]
-        },
         {
             "name": "bensampo/laravel-enum",
             "version": "v1.27",
@@ -142,39 +76,6 @@
                 "validation"
             ],
             "time": "2019-11-16T12:03:42+00:00"
-        },
-        {
-            "name": "beyondcode/viewcache",
-            "version": "dev-master",
-            "dist": {
-                "type": "path",
-                "url": "./nova-components/Viewcache",
-                "reference": "b81ddd3e6d5ac3182cb7e2592182703f583686a6"
-            },
-            "require": {
-                "php": ">=7.1.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Beyondcode\\Viewcache\\ToolServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Beyondcode\\Viewcache\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "description": "A Laravel Nova tool.",
-            "keywords": [
-                "laravel",
-                "nova"
-            ]
         },
         {
             "name": "cakephp/chronos",
@@ -2875,39 +2776,6 @@
                 "uuid"
             ],
             "time": "2018-07-19T23:38:55+00:00"
-        },
-        {
-            "name": "ross/custom-resource-toolbar",
-            "version": "dev-master",
-            "dist": {
-                "type": "path",
-                "url": "./nova-components/CustomResourceToolbar",
-                "reference": "9fa5fb57045305fb4aeee024d21aa19bac1de41a"
-            },
-            "require": {
-                "php": ">=7.1.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Ross\\CustomResourceToolbar\\ToolServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Ross\\CustomResourceToolbar\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "description": "A Laravel Nova resource tool.",
-            "keywords": [
-                "laravel",
-                "nova"
-            ]
         },
         {
             "name": "sixlive/nova-text-copy-field",
