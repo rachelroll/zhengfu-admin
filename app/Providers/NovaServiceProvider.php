@@ -2,7 +2,6 @@
 
 namespace App\Providers;
 
-use Beyondcode\Viewcache\Viewcache;
 use Laravel\Nova\Nova;
 use Laravel\Nova\Cards\Help;
 use Illuminate\Support\Facades\Gate;
@@ -82,7 +81,6 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
         return [
             new \Cloudstudio\ResourceGenerator\ResourceGenerator(),
             new \Spatie\TailTool\TailTool(),
-            new Viewcache(),
 
         ];
     }
