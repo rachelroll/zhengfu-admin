@@ -2,10 +2,12 @@
 
 namespace App\Providers;
 
+use Beyondcode\Viewcache\Viewcache;
 use Laravel\Nova\Nova;
 use Laravel\Nova\Cards\Help;
 use Illuminate\Support\Facades\Gate;
 use Laravel\Nova\NovaApplicationServiceProvider;
+use Nibri10\NovaGrid\NovaGrid;
 
 class NovaServiceProvider extends NovaApplicationServiceProvider
 {
@@ -79,6 +81,9 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     {
         return [
             new \Cloudstudio\ResourceGenerator\ResourceGenerator(),
+            new \Spatie\TailTool\TailTool(),
+            new Viewcache(),
+
         ];
     }
 

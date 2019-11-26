@@ -2,12 +2,16 @@
 
 namespace App\Nova;
 
+use Acme\StripeInspector\StripeInspector;
+use App\Nova\Actions\SyncMovieFile;
+use Epartment\NovaDependencyContainer\NovaDependencyContainer;
 use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\Date;
 use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
 
 use Laravel\Nova\Fields\Image;
+use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Textarea;
 use Laravel\Nova\Http\Requests\NovaRequest;
@@ -55,6 +59,7 @@ class Movie extends Resource
     {
         return [
             ID::make()->sortable(),
+            StripeInspector::make(),
             Text::make('电影名称', 'name'),
             Text::make('电影导演', 'director'),
             Text::make('电影主演', 'actors'),
@@ -67,6 +72,16 @@ class Movie extends Resource
             //Text::make('资源路径', 'path'),
             Text::make('备注', 'remark')->nullValues(['']),
             BelongsTo::make('类型', 'category', 'App\Nova\Category')->sortable(),
+
+            Select::make('Name format', 'name_format')->options([
+                0 => 'First Name',
+                1 => 'First Name / Last Name',
+                2 => 'Full Name'
+            ])->displayUsingLabels(),
+
+            NovaDependencyContainer::make([
+                Text::make('First Name', 'first_name')
+            ])->dependsOn('name_format', 0),
         ];
     }
 
@@ -111,11 +126,16 @@ class Movie extends Resource
      */
     public function actions(Request $request)
     {
-        return [];
+        return [
+            new SyncMovieFile(),
+
+        ];
     }
 
     public static function label()
     {
         return '电影';
     }
+
+
 }

@@ -9,13 +9,26 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
+        "bensampo/laravel-enum": "^1.27",
         "cloudstudio/resource-generator": "^1.5",
         "coderello/laravel-nova-lang": "^1.2",
+        "ebess/advanced-nova-media-library": "^2.9",
+        "epartment/nova-dependency-container": "^1.2",
         "fideloper/proxy": "^4.0",
+        "gregoriohc/laravel-nova-theme-responsive": "^0.8.0",
+        "invato/redirect-to-index": "dev-master",
+        "koss-shtukert/laravel-nova-select2-auto-complete": "^1.20",
         "laravel/framework": "^6.0",
         "laravel/helpers": "^1.1",
         "laravel/nova": "*",
-        "laravel/tinker": "^1.0"
+        "laravel/tinker": "^1.0",
+        "nibri10/nova-grid": "^1.0",
+        "sixlive/nova-text-copy-field": "^1.5",
+        "spatie/nova-tail-tool": "^2.1",
+        "ross/custom-resource-toolbar": "*",
+        "acme/stripe-inspector": "*",
+        "beyondcode/viewcache": "*",
+        "0x15f/custom-resource-toolbar": "*"
     },
     "require-dev": {
         "facade/ignition": "^1.4",
@@ -23,7 +36,6 @@
         "mockery/mockery": "^1.0",
         "nunomaduro/collision": "^3.0",
         "phpunit/phpunit": "^8.0"
-
     },
     "config": {
         "optimize-autoloader": true,
@@ -71,6 +83,34 @@
         "packagist": {
             "type": "composer",
             "url": "https://packagist.phpcomposer.com"
+        },
+        "0": {
+            "type": "path",
+            "url": "./nova-components/CustomResourceToolbar"
+        },
+        "1": {
+            "type": "path",
+            "url": "./nova-components/StripeInspector"
+        },
+        "2": {
+            "type": "path",
+            "url": "./nova-components/Viewcache"
+        },
+        "3": {
+            "type": "path",
+            "url": "./nova-components/StripeInspector"
+        },
+        "4": {
+            "type": "path",
+            "url": "./nova-components/CustomResourceToolbar"
+        },
+        "5": {
+            "type": "path",
+            "url": "./nova-components/CustomResourceToolbar"
+        },
+        "6": {
+            "type": "path",
+            "url": "./nova-components/CustomResourceToolbar"
         }
     }
 }

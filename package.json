@@ -7,7 +7,13 @@
         "watch-poll": "npm run watch -- --watch-poll",
         "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
         "prod": "npm run production",
-        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "build-custom-resource-toolbar": "cd nova-components/CustomResourceToolbar && npm run dev",
+        "build-custom-resource-toolbar-prod": "cd nova-components/CustomResourceToolbar && npm run prod",
+        "build-stripe-inspector": "cd nova-components/StripeInspector && npm run dev",
+        "build-stripe-inspector-prod": "cd nova-components/StripeInspector && npm run prod",
+        "build-viewcache": "cd nova-components/Viewcache && npm run dev",
+        "build-viewcache-prod": "cd nova-components/Viewcache && npm run prod"
     },
     "devDependencies": {
         "axios": "^0.19",
@@ -16,6 +22,7 @@
         "lodash": "^4.17.13",
         "resolve-url-loader": "^2.3.1",
         "sass": "^1.15.2",
-        "sass-loader": "^7.1.0"
+        "sass-loader": "^7.1.0",
+        "vue-template-compiler": "^2.6.10"
     }
 }

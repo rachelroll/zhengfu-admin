@@ -3,6 +3,8 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\File;
 
 class Movie extends Model
 {
@@ -15,4 +17,6 @@ class Movie extends Model
     {
         return $this->belongsTo(Category::class);
     }
+
+
 }
